@@ -28,3 +28,6 @@ def test_eight_returns_three_twos():
 
 def test_nine_returns_two_threes():
     assert generate_prime_factors(9) == [3, 3]
+
+def test_twelve_returns_two_twos_and_three():
+    assert generate_prime_factors(12) == [2, 2, 3]

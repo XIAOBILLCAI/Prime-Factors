@@ -1,31 +1,16 @@
-def generate_prime_factors(number):
-    if not isinstance(number, int) or isinstance(number, bool):
-        raise ValueError("Input must be an integer")
-
-    if number == 1:
-        return []
 
 def generate_prime_factors(number):
     if not isinstance(number, int) or isinstance(number, bool):
         raise ValueError("Input must be an integer")
 
-    if number == 1:
-        return []
+    factors = []
+    divisor = 2
 
-    if number == 2:
-        return [2]
+    while number > 1:
+        while number % divisor == 0:
+            factors.append(divisor)
+            number //= divisor
 
-    if number == 3:
-        return [3]
+        divisor += 1
 
-    if number == 4:
-        return [2, 2]
-
-    if number == 6:
-        return [2, 3]
-
-    if number == 8:
-        return [2, 2, 2]
-
-    if number == 9:
-        return [3, 3]
+    return factors
