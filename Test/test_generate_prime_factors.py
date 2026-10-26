@@ -17,3 +17,6 @@ def test_three_returns_three():
 
 def test_four_returns_two_twos():
     assert generate_prime_factors(4) == [2, 2]
+
+def test_six_returns_two_and_three():
+    assert generate_prime_factors(6) == [2, 3]
