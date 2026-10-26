@@ -8,3 +8,6 @@ def test_non_integer_input_raises_value_error():
 
 def test_one_returns_empty_list():
     assert generate_prime_factors(1) == []
+
+def test_two_returns_two():
+    assert generate_prime_factors(2) == [2]
