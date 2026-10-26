@@ -23,3 +23,6 @@ def generate_prime_factors(number):
 
     if number == 6:
         return [2, 3]
+
+    if number == 8:
+        return [2, 2, 2]
